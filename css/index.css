@@ -456,38 +456,39 @@ footer p {
   line-height: 3.2;
 }
 
-footer .li-before li:first-child::before {
-  content: url("/media/loc.png");
-  /*Insertcontentthatlookslikebullets*/
-  /*  width:2em;
-      height: 2em;  */
-  /*    padding: 0px 4px;
-     background-color: #fff;
-    border-radius:50% ;
-    -webkit-border-radius:50% ;
-    -moz-border-radius:50% ;
-    -ms-border-radius:50% ;
-    -o-border-radius:50% ;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.19); 
-display: inline-block;
-line-height: 11px; */
+footer .li-before li {
+  clear: left;
 }
 
-footer .li-before .second-child-li::before {
-  content: url("/media/phone Kopie.png");
-  /* Insert content that looks like bullets */
-  padding-right: 8px;
+footer .li-before li::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  float: left;
+  background-position: center;
+  border-radius: 50%;
+  background-color: #CFD8DB;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-footer .li-before .third-child-li::before {
-  content: url("/media/phone Kopie.png");
-  /* Insert content that looks like bullets */
-  padding-right: 8px;
+footer .li-before li:nth-child(1)::before {
+  background-image: url("/media/loc.png");
 }
 
-footer .li-before .fourth-child-li::before {
-  content: url("/media/email.png");
-  /* Insert content that looks like bullets */
-  padding-right: 8px;
+footer .li-before li:nth-child(2)::before {
+  background-image: url("/media/phone Kopie.png");
+}
+
+footer .li-before li:nth-child(3)::before {
+  background-image: url("/media/phone Kopie.png");
+}
+
+footer .li-before li:nth-child(4)::before {
+  background-image: url("/media/email.png");
 }
 /*# sourceMappingURL=index.css.map */
